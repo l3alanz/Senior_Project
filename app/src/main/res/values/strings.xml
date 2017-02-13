@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Senior_project</string>
+    <string name="text_policy">Accept the term of Use and Privacy policy</string>
+    <string name="rs_goal"><u>1500 KCAL</u></string>
+    <string name="rs_consumed"><u>0 KCAL</u></string>
+    <string name="rs_remain"><u>0 KCAL</u></string>
+    <string name="rs_water_consumed"><u>0 Glass</u></string>
+    <string name="rs_minute_exercise"><u>30 minutes</u></string>
+    <string name="rs_mission">30 mins cardio</string>
+    <string name="rs_misson2">Drink 8 glasses of water</string>
+    <string name="rs_burn"><u>0 KCAL</u></string>
+</resources>

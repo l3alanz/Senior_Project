@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/bg_2"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Summary"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/ic_hamburger"
+                android:textColor="#ffffff"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- ICON -->
+            <ImageView
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/ic_hamburger"
+                android:src="@drawable/ic_hamburger"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3dffffff"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="@dimen/margin_summary_tb">
+
+                <TextView
+                    android:id="@+id/tvGoal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="@string/rs_goal"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tvGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textColor="#d8ffffff"
+                    android:text="GOAL"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="@dimen/margin_summary_tb">
+
+                <TextView
+
+                    android:id="@+id/tvBurn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="@string/rs_burn"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tvBurn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textColor="#d8ffffff"
+                    android:text="Cals burned"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        ///////Cals consumed Cals remain/////////
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3dffffff"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/margin_summary_tb"
+                android:layout_marginBottom="@dimen/margin_summary_tb">
+
+                <TextView
+                    android:id="@+id/tvCalConsumed"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="@string/rs_consumed"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tvCalConsumed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textColor="#d8ffffff"
+                    android:text="Cals consumed"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/margin_summary_tb"
+                android:layout_marginBottom="@dimen/margin_summary_tb">
+
+                <TextView
+
+                    android:id="@+id/tvCalRemain"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="@string/rs_remain"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tvCalRemain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textColor="#d8ffffff"
+                    android:text="Cals remaining"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        /////water consumed  minute exercise///////
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3dffffff"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/margin_summary_tb"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tvWaterConsumed"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="@string/rs_water_consumed"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tvWaterConsumed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textColor="#d8ffffff"
+                    android:text="Water consumed"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/margin_summary_tb"
+                android:layout_marginBottom="@dimen/margin_summary_tb">
+
+                <TextView
+
+                    android:id="@+id/tvMinuteExercise"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="@string/rs_minute_exercise"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tvMinuteExercise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textColor="#d8ffffff"
+                    android:text="Minutes Exercise"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Today's Mission"/>
+
+        ////// Today's Mission///////
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#3dffffff">
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tvMission1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="18dp"
+                android:textColor="#d9ffffff"
+                android:text="@string/rs_mission"/>
+
+            <CheckBox
+                android:id="@+id/cb_mission1"
+                android:layout_toRightOf="@id/tvMission1"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#3dffffff">
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tvMission2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="18dp"
+                android:textColor="#d9ffffff"
+                android:text="@string/rs_misson2"/>
+
+            <CheckBox
+                android:id="@+id/cb_mission2"
+                android:layout_toRightOf="@id/tvMission2"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#3dffffff">
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tvMission3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="18dp"
+                android:textColor="#d9ffffff"
+                android:text="Sleep 6-8 hours"/>
+
+            <CheckBox
+                android:id="@+id/cb_mission3"
+                android:layout_toRightOf="@id/tvMission3"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

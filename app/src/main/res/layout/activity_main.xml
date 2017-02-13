@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nicha.senior_project.MainActivity">
+
+    <ImageView
+        android:src="@drawable/bg_2"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Sign up"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="56dp"
+            android:textColor="#ffffff"
+            android:textSize="45sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        /////Username input//////
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="text"
+            android:layout_marginTop="24dp"
+            android:id="@+id/input_username"
+            android:layout_marginRight="36dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/ic_user"
+            android:hint="Username"
+            android:textColor="#ffffff"
+            android:textColorHint="#77ffffff"
+            android:padding="10dp"
+            android:background="#2cf5f5f5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ICON -->
+        <ImageView
+            android:padding="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/ic_user"
+            android:src="@drawable/ic_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        </RelativeLayout>
+
+        /////Email input//////
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="textEmailAddress|text"
+                android:layout_marginTop="24dp"
+                android:id="@+id/input_email"
+                android:layout_marginRight="36dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/ic_email"
+                android:hint="Email"
+                android:textColor="#ffffff"
+                android:textColorHint="#77ffffff"
+                android:padding="10dp"
+                android:background="#2cf5f5f5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- ICON -->
+            <ImageView
+                android:padding="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/ic_email"
+                android:src="@drawable/ic_email"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+
+        /////Password input//////
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:inputType="textPassword"
+                android:layout_marginTop="24dp"
+                android:id="@+id/input_password"
+                android:layout_marginRight="36dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/ic_password"
+                android:hint="Password"
+                android:textColor="#ffffff"
+                android:textColorHint="#77ffffff"
+                android:padding="10dp"
+                android:background="#2cf5f5f5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- ICON -->
+            <ImageView
+                android:padding="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/ic_password"
+                android:src="@drawable/ic_password"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+
+        <Button
+
+            android:layout_marginTop="36dp"
+            android:layout_gravity="center"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:textColor="#ffffff"
+            android:background="@drawable/selector_btn_create" />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:text="@string/text_policy"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
